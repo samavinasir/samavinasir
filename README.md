@@ -1,6 +1,22 @@
 # 💫 About Me:
-🔭 I'm currently working on<br>Applying machine learning to bioinformatics problems — building pipelines, multi-omics analysis, and antimicrobial peptide identification in drug-resistant bacteria.<br>👥 I'm looking to collaborate on<br>Open-source bioinformatics tools, ML pipelines, and projects combining AI with genomics or clinical research data.<br>🤝 I'm looking for help with<br>Scaling ML pipelines for production use, and best practices for deploying research tools as robust, well-documented APIs.<br>🌱 I'm currently learning<br>Large Language Models (LLMs), transformer architectures, and their applications in biological data analysis.<br>💬 Ask me about<br>Genomics and Proteomics Data Analysis, GWAS & multi-omics, machine learning for bioinformatics, or Good Clinical Practice (GCP)/clinical research compliance.<br>⚡ Fun fact<br>I've worked across the full spectrum of biology — from hospital wards and diagnostic labs to machine learning pipelines.
 
+🔭 I'm currently working on  
+Applying machine learning and AI to solve bioinformatics challenges, with a focus on multi-omics analysis, antimicrobial peptide discovery, genomics, and scalable computational pipelines.
+
+👥 I'm looking to collaborate on  
+Open-source bioinformatics tools, AI-driven healthcare applications, machine learning pipelines, and research projects involving genomics, clinical data, or precision medicine.
+
+🤝 I'm looking for help with  
+Building production-ready AI/ML systems, designing scalable data pipelines, and following best practices for deploying research software as reliable APIs and cloud-based applications.
+
+🌱 I'm currently learning  
+Agentic AI, Generative AI, Apache Spark, advanced data science technologies, and modern AI frameworks for building intelligent, scalable applications.
+
+💬 Ask me about  
+Bioinformatics, genomics, proteomics, GWAS, multi-omics data analysis, machine learning, Python, Django, data science, and Good Clinical Practice (GCP) in clinical research.
+
+⚡ Fun fact  
+I've worked across the entire biology-to-AI journey, from hospital wards and diagnostic laboratories to developing machine learning models and bioinformatics applications.
 
 ## 🌐 Socials:
 [![Behance](https://img.shields.io/badge/Behance-1769ff?logo=behance&logoColor=white)](https://behance.net/designsbysamavi) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/samavinasir) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:samavi.nasir96@gmail.com) 
