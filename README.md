@@ -1,4 +1,4 @@
-# 💫 About Me:
+# About Me:
 
 🔭 I'm currently working on  
 Applying machine learning and AI to solve bioinformatics challenges, with a focus on multi-omics analysis, antimicrobial peptide discovery, genomics, and scalable computational pipelines.
@@ -26,7 +26,7 @@ I've worked across the entire biology-to-AI journey, from hospital wards and dia
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.shion.dev/api?username=samavinasir&theme=dark&hide_border=false&include_all_commits=true&count_private=true&hide=stars,prs,issues)<br/>
-![](https://ghchart.rshah.org/2E9BF0/samavinasir)<br/>
+![](https://github-readme-activity-graph.vercel.app/graph?username=samavinasir&theme=react-dark&hide_border=true)<br/>
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=samavinasir&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
 
 ### 🔝 Top Contributed Repo
