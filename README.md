@@ -69,18 +69,6 @@ Interactive comparative genomics platform featuring
 
 ---
 
-## 🚛 Intelligent Route Optimization API
-
-Full-stack Django application implementing
-
-- Fuel Stop Optimization
-- Driver Hours-of-Service
-- Route Planning
-- React + Django
-- Leaflet Maps
-
----
-
 # 🛠 Tech Stack
 
 ### Languages
