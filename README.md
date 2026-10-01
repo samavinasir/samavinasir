@@ -78,9 +78,9 @@ An open-source AI application that helps researchers discover relevant literatur
 
 ---
 
-### 🤖 B-vac.AI | Agentic AI for Vaccine Research
+### 🤖 B-vac.AI | Agentic AI for Vaccine Development
 
-An AI-assisted research workflow designed to coordinate multiple stages of reverse vaccinology, from pathogen genome analysis and protein candidate identification to antigen evaluation, epitope analysis, and candidate prioritization.
+An AI-assisted research workflow designed to coordinate multiple stages of vaccinology, from pathogen genome analysis and protein candidate identification to antigen evaluation, epitope analysis, and candidate prioritization.
 
 **Key engineering components:**
 
