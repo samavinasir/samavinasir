@@ -54,18 +54,19 @@ My background includes applied machine learning and scientific computing, where 
 
 <!-- TODO: add a screenshot, e.g. <img src="docs/screenshot.png" width="800"/> -->
 
-**Problem:** AI research tools often summarize with confidence but hide where a statement came from, or overreach by judging whether findings are "true". Researchers need help finding and reading papers, not an opaque verdict.
+**Problem:** Researchers need help finding and reading relevant papers.
 
-**What I built:** An open-source LangGraph workflow of focused agents (planner → multi-source retrieval → paper selector → summarizer → report generator) that returns up to 10 papers as reading cards: bibliographic metadata, an AI study summary, verbatim excerpts, and each abstract's final sentence.
+**What I built:** TraceReview is a literature-review assistant built as a controlled LangGraph workflow. It searches scholarly sources, selects up to 10 papers, and turns available records into reading cards with bibliographic details, an AI-generated study summary, source-matched excerpts, and the abstract’s final sentence copied from the record. Researchers interpret the papers; TraceReview does not decide whether their findings are true.
 
 **Engineering highlights**
-
-* **Design decision:** The first version extracted and verified claims with an LLM. Failure analysis showed verifier errors and interpretive wording, so I redesigned it to stay faithful to the source and never judge truth.
-* **Source-checked output:** Excerpts are validated in code against the abstract, unmatched quotes are dropped, and final sentences are copied programmatically instead of generated.
-* **Low-cost retrieval:** PubMed, Europe PMC, OpenAlex and other scholarly sources are searched concurrently, then deduplicated and ranked locally with no LLM in the selection step.
-* **Resilient to provider limits:** Pydantic structured outputs, model fallback (Groq → OpenRouter), rate-limit cooldown handling, and partial results when some summaries fail.
-* **Observability:** A structured audit trail of every agent and tool call (latency, tokens, model, errors), stored in PostgreSQL and shown in the UI.
-* **Controlled search broadening:** One extra search round through a LangGraph conditional edge when retrieval is weak.
+ 
+* **Source-first design:** The app presents paper-level reading aids and source wording so researchers can assess the evidence themselves.
+* **Checked excerpts:** The app checks proposed quotes against the abstract, and falls back to relevant abstract sentences copied verbatim when needed.
+* **Focused retrieval:** PubMed and Europe PMC are searched by default, with other scholarly-source adapters available. Records are deduplicated, filtered, and ranked locally without an LLM making the paper-selection decision.
+* **Bounded review:** A run keeps up to 10 records and creates up to 10 paper cards. It can broaden the search once when too few usable cards are found; a summarization failure alone does not trigger more searching.
+* **Lower repeat cost:** Successful paper summaries are cached in PostgreSQL and reused when the source text, question, and prompt version match.
+* **Provider resilience:** Groq calls use concurrency and token limits. If configured, OpenRouter gets one fallback attempt when Groq is rate-limited. Runs can still report available cards when some summaries fail.
+* **Traceable workflow:** Structured events record workflow steps, source selection, cache use, quote checks, latency, and available model usage in PostgreSQL and the UI.
 
 **Tech stack:** Python, FastAPI, Pydantic, LangGraph, LangChain, Groq, PostgreSQL, React, TypeScript, Vite, Docker Compose.
 
