@@ -1,9 +1,3 @@
-<!-- ========================================================= -->
-
-<!--                    SAMAVI NASIR                           -->
-
-<!-- ========================================================= -->
-
 <div align="center">
 
 # Hi, I'm Samavi Nasir 👋
@@ -16,15 +10,10 @@ I build AI-powered applications, agentic workflows, and data-driven systems, fro
 
 <br>
 
-<a href="https://samavinasir.vercel.app/ai">
-<img src="https://img.shields.io/badge/Portfolio-Visit%20My%20Work-2563EB?style=for-the-badge&logo=vercel&logoColor=white"/>
-</a>
-<a href="https://github.com/samavinasir">
-<img src="https://img.shields.io/badge/GitHub-Explore%20Projects-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-<a href="https://linkedin.com/in/samavinasir">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
+<a href="https://samavinasir.vercel.app/ai"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+<a href="https://linkedin.com/in/samavinasir"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:samavi.nasir96@gmail.com"><img src="https://img.shields.io/badge/Email-0EA5A4?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://scholar.google.com/citations?user=K_okdSMAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white"/></a>
 
 <br><br>
 
@@ -59,20 +48,26 @@ My background includes applied machine learning and scientific computing, where 
 
 ## 🚀 Featured Projects
 
-### 🔎 TraceReview | Agentic AI for Literature Reviews
+### 🔎 TraceReview | Literature review you can trace
 
-An open-source AI application that helps researchers discover relevant literature, review selected papers, and inspect how a literature review is assembled.
+> Ask a research question and get a focused set of relevant papers as source-checked reading cards, with every step of the workflow inspectable.
 
-**Key engineering components:**
+<!-- TODO: add a screenshot, e.g. <img src="docs/screenshot.png" width="800"/> -->
 
-* Focused agents for research planning, source retrieval, paper selection, summarization, and report generation.
-* LangGraph-based workflow orchestration with controlled search broadening.
-* Structured reading cards with bibliographic metadata, AI summaries, and source-checked excerpts.
-* PostgreSQL and pgvector for research records, summaries, and workflow audit events.
-* FastAPI backend and React + TypeScript frontend.
-* Docker Compose for running the application stack.
+**Problem:** AI research tools often summarize with confidence but hide where a statement came from, or overreach by judging whether findings are "true". Researchers need help finding and reading papers, not an opaque verdict.
 
-**Tech stack:** Python, FastAPI, Pydantic, LangGraph, LangChain, Groq, PostgreSQL, pgvector, React, TypeScript, Vite, Docker.
+**What I built:** An open-source LangGraph workflow of focused agents (planner → multi-source retrieval → paper selector → summarizer → report generator) that returns up to 10 papers as reading cards: bibliographic metadata, an AI study summary, verbatim excerpts, and each abstract's final sentence.
+
+**Engineering highlights**
+
+* **Design decision:** The first version extracted and verified claims with an LLM. Failure analysis showed verifier errors and interpretive wording, so I redesigned it to stay faithful to the source and never judge truth.
+* **Source-checked output:** Excerpts are validated in code against the abstract, unmatched quotes are dropped, and final sentences are copied programmatically instead of generated.
+* **Low-cost retrieval:** PubMed, Europe PMC, OpenAlex and other scholarly sources are searched concurrently, then deduplicated and ranked locally with no LLM in the selection step.
+* **Resilient to provider limits:** Pydantic structured outputs, model fallback (Groq → OpenRouter), rate-limit cooldown handling, and partial results when some summaries fail.
+* **Observability:** A structured audit trail of every agent and tool call (latency, tokens, model, errors), stored in PostgreSQL and shown in the UI.
+* **Controlled search broadening:** One extra search round through a LangGraph conditional edge when retrieval is weak.
+
+**Tech stack:** Python, FastAPI, Pydantic, LangGraph, LangChain, Groq, PostgreSQL, React, TypeScript, Vite, Docker Compose.
 
 🔗 **[View Repository](https://github.com/samavinasir/tracereview)**
 
@@ -80,71 +75,68 @@ An open-source AI application that helps researchers discover relevant literatur
 
 ### 🤖 B-vac.AI | Agentic AI for Vaccine Development
 
-An AI-assisted research workflow designed to coordinate multiple stages of vaccinology, from pathogen genome analysis and protein candidate identification to antigen evaluation, epitope analysis, and candidate prioritization.
+> An LLM-orchestrated workflow that chains specialized bioinformatics tools to take a pathogen from genome to prioritized vaccine candidates.
 
-**Key engineering components:**
+**Problem:** Reverse vaccinology means running many separate tools by hand (genome analysis, protein candidate selection, antigen and epitope evaluation) and combining the results manually.
 
-* LLM-based planning and agent orchestration.
-* Integration of specialized bioinformatics and machine learning tools.
-* Multi-stage workflows for candidate analysis and prioritization.
+**What I built:** An agentic workflow that plans the analysis stages, calls the right tools through a unified interface, and produces a ranked list of candidates.
+
+**Engineering highlights**
+
+* LLM-based planning that breaks a pathogen-level goal into tool calls.
+* Integration of specialized bioinformatics and machine learning tools into one workflow.
 * Retrieval and use of domain-specific scientific resources.
-* Coordination of computational tools through a unified workflow.
+* Multi-stage candidate analysis and prioritization.
+
+<!-- TODO: add one concrete result, e.g. number of pathogens tested or time saved -->
 
 **Tech stack:** Python, LLMs, agentic workflows, machine learning, REST APIs, BLAST, scientific data integration.
 
-*An example of applying agentic AI to a complex, tool-intensive scientific workflow.*
-
 ---
 
-### 🧠 VacSol-ML | Machine Learning Application
+### 🧠 VacSol-ML | Machine Learning for Vaccine Antigen Prediction
 
-A machine learning-powered application for vaccine antigen prediction against ESKAPE pathogens, developed from research in computational biology and machine learning.
+> A machine learning application that predicts vaccine antigen candidates against ESKAPE pathogens. **Published in *Vaccine* (2024).**
 
-**Key engineering components:**
+**What I built:** The full pipeline: protein feature engineering, model training and validation, integration of specialized prediction tools, a Django web application, and deployment on Linux infrastructure.
 
-* Protein sequence feature engineering.
-* Machine learning-based candidate prediction.
-* Integration of specialized prediction tools.
-* Django-based web application.
-* API and backend integration for computational workflows.
-* Deployment on Linux infrastructure.
+**Engineering highlights**
+
+* Protein sequence feature engineering and ML-based candidate prediction.
+* Django web application with API and backend integration for computational workflows.
+* Packaged as a reusable library on PyPI.
+* Deployed and maintained on Linux (Apache + Gunicorn).
+
+<!-- TODO: add the key metric from the paper (e.g. accuracy or AUC and dataset size) -->
 
 **Tech stack:** Python, scikit-learn, Django, PostgreSQL, REST APIs, Linux, Apache, Gunicorn.
 
-📦 **[PyPI Package](https://pypi.org/project/vacsol-ml/)**
-📄 **[Research Publication](https://doi.org/10.1016/j.vaccine.2024.126204)**
+📦 **[PyPI Package](https://pypi.org/project/vacsol-ml/)** · 📄 **[Research Publication](https://doi.org/10.1016/j.vaccine.2024.126204)**
 
 ---
 
-### 🧬 ProteoAnnot | Protein Annotation Service
+### 🧬 ProteoAnnot | Protein Annotation Package
 
-A Python-based protein annotation service integrating established sequence-analysis and protein-feature extraction tools into a reusable annotation workflow.
+> A Python package that wraps sequence-analysis and feature-extraction tools behind one reusable annotation interface, used inside larger AI-assisted research workflows.
 
-**Key engineering components:**
+**Engineering highlights**
 
-* Integration of specialized scientific tools.
-* Protein feature extraction and structured annotation.
-* Reusable Python package and service-oriented design.
-* Integration with larger AI-assisted research workflows.
+* Integration of Biopython, iFeature and SignalP 6.
+* Structured protein feature extraction and annotation output.
+* Reusable package and service-oriented design.
 
 **Tech stack:** Python, Biopython, iFeature, SignalP 6, REST APIs.
 
 📦 **[View on PyPI](https://pypi.org/project/proteoannot/)**
 
----
+<details>
+<summary><b>Earlier work</b></summary>
 
-### ⚙️ B-Pan | Desktop Data Analysis Application
+<br>
 
-A desktop application for bacterial pangenome analysis, built to make complex computational workflows accessible through a graphical interface.
+* **B-Pan:** A Windows desktop application for bacterial pangenome analysis, built with Tkinter and packaged with PyInstaller and Inno Setup. It wraps BLAST, DIAMOND, MUSCLE and MAFFT behind a graphical interface.
 
-**Key engineering components:**
-
-* Python-based GUI development with Tkinter.
-* Integration of external computational tools.
-* Multi-step data-processing workflows.
-* Packaging Windows applications for installation and distribution.
-
-**Tech stack:** Python, Tkinter, PyInstaller, Inno Setup, BLAST, DIAMOND, MUSCLE, MAFFT.
+</details>
 
 ---
 
@@ -267,7 +259,7 @@ I am particularly interested in building AI systems that are not only capable of
 
 My research background informs how I approach machine learning, scientific data, and AI-assisted applications.
 
-* **VacSol-ML(ESKAPE):** Machine learning for vaccine antigen prediction against ESKAPE pathogens.
+* **VacSol-ML (ESKAPE):** Machine learning for vaccine antigen prediction against ESKAPE pathogens.
   [Read the publication](https://doi.org/10.1016/j.vaccine.2024.126204)
 
 * **Agentic AI and scientific research automation:** Developing workflows that coordinate AI agents and specialized tools to support complex research tasks.
@@ -298,47 +290,17 @@ For me, scientific computing is one application area for AI engineering, alongsi
 
 ---
 
-## 📈 Contribution Activity
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=samavinasir&theme=tokyo-night&hide_border=true"/>
-
-</div>
-
----
-
-## 🏆 GitHub Achievements
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=samavinasir&theme=algolia&column=4&margin-w=15&margin-h=15"/>
-
-</div>
-
----
-
 ## 🌍 Let's Connect
 
 I'm interested in connecting with teams working on AI engineering, agentic systems, LLM applications, data engineering, and intelligent software products.
 
 <div align="center">
 
-<a href="https://samavinasir.vercel.app/ai">
-<img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=vercel&logoColor=white"/>
-</a>
-<a href="https://github.com/samavinasir">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-<a href="https://linkedin.com/in/samavinasir">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-<a href="mailto:samavi.nasir96@gmail.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-<a href="https://scholar.google.com/citations?user=K_okdSMAAAAJ&hl=en">
-<img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white"/>
-</a>
+<a href="https://samavinasir.vercel.app/ai"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+<a href="https://github.com/samavinasir"><img src="https://img.shields.io/badge/GitHub-475569?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://linkedin.com/in/samavinasir"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:samavi.nasir96@gmail.com"><img src="https://img.shields.io/badge/Email-0EA5A4?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://scholar.google.com/citations?user=K_okdSMAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white"/></a>
 
 </div>
 
