@@ -17,7 +17,8 @@ I build AI-powered applications, agentic workflows, and data-driven systems, fro
 
 <br><br>
 
-![](https://komarev.com/ghpvc/?username=samavinasir)
+![Profile Views](https://komarev.com/ghpvc/?username=samavinasir&label=Profile+Views&color=2563EB&style=flat-square)
+
 
 </div>
 
