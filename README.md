@@ -15,11 +15,6 @@ I build AI-powered applications, agentic workflows, and data-driven systems, fro
 <a href="mailto:samavi.nasir96@gmail.com"><img src="https://img.shields.io/badge/Email-0EA5A4?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://scholar.google.com/citations?user=K_okdSMAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white"/></a>
 
-<br>
-
-![Profile Views](https://komarev.com/ghpvc/?username=samavinasir&label=Profile+Views&color=2563EB&style=flat-square)
-
-
 </div>
 
 ---
