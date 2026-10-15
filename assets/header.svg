@@ -5,7 +5,7 @@
 </defs>
 <rect width="900" height="170" rx="24" fill="url(#bg)"/>
 <rect width="900" height="170" rx="24" fill="url(#glow)"/>
-<text x="450" y="68" text-anchor="middle" font-size="38" font-weight="800" fill="#ffffff">Samavi Nasir 🧬</text>
-<text x="450" y="104" text-anchor="middle" font-size="17" font-weight="700" fill="#22d3ee">AI Engineer &amp; Bioinformatics Scientist</text>
-<text x="450" y="134" text-anchor="middle" font-size="14" font-style="italic" fill="#94a3b8">Bridging machine learning, multi-omics data, and production MLOps.</text>
+<text x="450" y="68" text-anchor="middle" font-size="38" font-weight="800" fill="#ffffff">Samavi Nasir</text>
+<text x="450" y="104" text-anchor="middle" font-size="17" font-weight="700" fill="#22d3ee">AI Engineer &amp; Healthcare Scientist</text>
+<text x="450" y="134" text-anchor="middle" font-size="14" font-style="italic" fill="#94a3b8">Bridging AI agents, machine learning, healthcare  &amp; multi-omics data, and production MLOps.</text>
 </svg>
