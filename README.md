@@ -1,43 +1,33 @@
-<div align="center">
+<p align="center">
+  <img src="assets/hero.svg" alt="Samavi Nasir — Advancing Healthcare through Computational Biology" width="100%">
+</p>
 
-# Samavi Nasir 🧬  
-**AI Engineer & Bioinformatics Scientist**  
-*Bridging machine learning, multi‑omics data, and production MLOps.*
+<p align="center">
+  <a href="https://samavinasir.vercel.app/ai"><img src="assets/btn-research.svg" alt="View Research" height="46"></a>
+  &nbsp;
+  <a href="https://samavinasir.vercel.app/"><img src="assets/btn-resume.svg" alt="Download Resume" height="46"></a>
+</p>
 
----
+<p align="center">
+  <img src="assets/stats.svg" alt="Stats" width="100%">
+</p>
 
-### 🔗 Navigation  
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-58a6ff?style=for-the-badge&logo=vercel)](https://samavinasir.vercel.app/ai)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com)  
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-161b22?style=for-the-badge&logo=github)](https://github.com)
+<p align="center">
+  <img src="assets/research.svg" alt="Research focus" width="100%">
+</p>
 
----
+<p align="center">
+  <img src="assets/experience.svg" alt="Experience" width="100%">
+</p>
 
-<table width="100%" style="border-collapse: collapse; border: 1px solid #30363d;">
-<tr>
-<td bgcolor="#161b22" style="padding: 12px; border-bottom: 1px solid #30363d;">
-<span style="color:#ff5f56; font-size:18px;">●</span>
-<span style="color:#ffbd2e; font-size:18px;">●</span>
-<span style="color:#27c93f; font-size:18px;">●</span>
-&nbsp;&nbsp;<span style="color:#8b949e; font-family:monospace;">samavinasir.vercel.app/ai</span>
-</td>
-</tr>
-<tr>
-<td bgcolor="#0d1117" align="center" style="padding:40px 20px;">
-<br>
-<font size="5" color="#58a6ff"><b>Explore My Interactive AI Application</b></font>
-<br><br>
-<font size="3" color="#c9d1d9">
-Click below to launch the live platform, view active ML workflows,<br>
-run vaccine antigen predictions, and access comprehensive project documentation.
-</font>
-<br><br><br>
+<p align="center">
+  <img src="assets/cta.svg" alt="Open to research collaborations" width="100%">
+</p>
 
-[![Launch](https://img.shields.io/badge/Launch-Project_Platform-238636?style=for-the-badge&logo=rocket)](https://samavinasir.vercel.app/ai)
-
-<br>
-</td>
-</tr>
-</table>
-
-</div>
+<p align="center">
+  <a href="https://samavinasir.vercel.app/ai"><img src="assets/btn-contact.svg" alt="Get in touch" height="46"></a>
+  &nbsp;
+  <a href="https://github.com/YOUR_USERNAME"><img src="https://img.shields.io/badge/GitHub-0b1a30?style=for-the-badge&logo=github&logoColor=22d3ee" alt="GitHub"></a>
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0b1a30?style=for-the-badge&logo=linkedin&logoColor=22d3ee" alt="LinkedIn"></a>
+  <a href="https://scholar.google.com/"><img src="https://img.shields.io/badge/Google_Scholar-0b1a30?style=for-the-badge&logo=googlescholar&logoColor=22d3ee" alt="Google Scholar"></a>
+</p>
