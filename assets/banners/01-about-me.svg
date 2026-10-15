@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 84" width="900" height="84" role="img" aria-label="01 About: About Me">
+  <title>01 / ABOUT - About Me</title>
+  <defs>
+    <clipPath id="card"><rect x="1" y="1" width="898" height="82" rx="10"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="898" height="82" rx="10" fill="#eef3fb" stroke="#cfd9ea" stroke-width="1.5"/>
+  <g clip-path="url(#card)"><rect x="1" y="1" width="7" height="82" fill="#2563eb"/></g>
+  <text x="34" y="31" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#2563eb">01 / ABOUT</text>
+  <text x="34" y="62" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="800" fill="#0f1f3d">About Me</text>
+  <text x="870" y="64" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="56" font-weight="800" fill="#c9d6ea">01</text>
+</svg>
