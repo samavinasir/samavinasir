@@ -10,6 +10,6 @@
   <a href="https://github.com" target="_blank"><img src="assets/nav-github.svg" alt="Follow on GitHub" height="46"></a>
 </p>
 
-<a href="https://samavinasir.vercel.app/ai" target="_blank"><img src="assets/terminal.svg" alt="Explore My Interactive AI Application — Launch Project Platform" width="100%"></a>
+<a href="https://samavinasir.vercel.app/ai" target="_blank"><img src="assets/terminal.svg" alt="Explore My Site — Visit My Site" width="100%"></a>
 
 </div>
