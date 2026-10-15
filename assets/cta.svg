@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="130" viewBox="0 0 900 130" font-family="Inter,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#10294a"/></linearGradient></defs>
-<rect width="900" height="130" rx="24" fill="url(#bg)"/>
-<text x="40" y="56" font-size="22" font-weight="800" fill="#ffffff">Open to research collaborations.</text>
-<text x="40" y="86" font-size="14" fill="#94a3b8">Reach out to discuss potential projects or partnerships.</text>
-</svg>
