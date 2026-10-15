@@ -14,6 +14,6 @@
 <text x="240" y="28" text-anchor="middle" font-size="12" font-family="SFMono-Regular,Consolas,Menlo,monospace" fill="#94a3b8">samavinasir.vercel.app/ai</text>
 <text x="450" y="118" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">Explore My <tspan fill="#22d3ee">Site</tspan></text>
 <text x="450" y="162" text-anchor="middle" font-size="18" fill="#94a3b8">Explore my research, and projects in healthcare AI.</text>
-<rect x="325" y="204" width="250" height="52" rx="14" fill="#06b6d4"/>
+<rect x="325" y="224" width="250" height="48" rx="14" fill="#06b6d4"/>
 <text x="450" y="256" text-anchor="middle" font-size="16" font-weight="700" fill="#0a1628">Visit My Site 🚀</text>
 </svg>
